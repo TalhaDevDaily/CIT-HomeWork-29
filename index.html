@@ -24,7 +24,51 @@
           >Daily</span
         >
       </h1>
+      <!-- To-Do Task Counter -->
+      <div class="task-counter">
+        <h2>To-Do</h2>
+        <div class="tasks-done-count"><span>0</span> / <span>5</span></div>
+      </div>
+
+      <!-- Assign Task -->
+      <p class="assign-null"></p>
+      <div class="assign-task">
+        <input
+          class="task-input"
+          placeholder="What do you want to do?..."
+          type="text"
+        />
+        <button onclick="handleAddTask()">+ Add Task</button>
+      </div>
+
+      <div class="to-do-list">
+        <!-- <div class="single-to-do">
+          <input value="Hola!" type="text" />
+          <button class="edit">
+            <ion-icon name="create-outline"></ion-icon>
+            <ion-icon name="save"></ion-icon>
+          </button>
+          <button class="delete">
+            <ion-icon name="trash-outline"></ion-icon>
+          </button>
+          <button class="done">
+            <ion-icon name="checkmark-done-outline"></ion-icon>
+          </button>
+        </div> -->
+      </div>
     </div>
+
+    <!-- Icons by IonIcons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- My Custom JavaScript -->
     <script defer src="./JavaScript/script.js"></script>
   </body>
 </html>

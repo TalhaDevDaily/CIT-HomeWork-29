@@ -18,21 +18,29 @@ html {
 body {
   font-family: "Roboto Mono", monospace;
   background-color: #212121;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
   max-width: 140rem;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
 }
 
 h1 {
+  /* display: inline-block; */
   margin-top: 10rem;
   font-size: 6rem;
   color: #ffd700;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .header-primary--5 {
@@ -42,5 +50,94 @@ h1 {
 
 .header-primary--daily {
   /* font-style: italic; */
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.task-counter {
+  width: 80rem;
+  padding: 1rem 2rem;
+  border: 0.3rem solid #777;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-done-count {
+  width: 15rem;
+  height: 15rem;
+  border: 0.2rem solid #ffd700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.assign-task {
+  width: 80rem;
+  border: 0.2rem solid #777;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+
+.assign-task input {
+  width: 70%;
+  height: 4rem;
+  border: none;
+  background-color: transparent;
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.assign-task button {
+  height: 4rem;
+  border: none;
+  font-size: 2rem;
+  background-color: #ffd700;
+  color: #212121;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 0.2rem 2rem;
+  margin-right: -0.2rem;
+}
+
+.single-to-do {
+  width: 80rem;
+  border: 0.2rem solid #777;
+  border-radius: 1rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-to-do input {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+
+ion-icon {
+  --ionicon-stroke-width: 4rem;
+}
+
+.single-to-do button {
+  width: 4rem;
+  font-size: 2rem;
+  background-color: #caac00;
+  border-radius: 1rem;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  margin-right: -0.2rem;
+}
+
+.single-to-do button:nth-child(3) {
+  background-color: #dc143c;
 }
