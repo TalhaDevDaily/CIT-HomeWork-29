@@ -2,6 +2,7 @@
 common colors
 #777777;
 #ffd700
+#dc143c
 */
 
 * {
@@ -47,6 +48,23 @@ h1 {
   font-style: italic;
   font-size: 8rem;
 }
+h1:hover .header-primary--5 {
+  animation: visibility linear 1s infinite;
+}
+
+@keyframes visibility {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
 
 .header-primary--daily {
   /* font-style: italic; */
@@ -73,6 +91,12 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.assign-null {
+  font-size: 2rem;
+  color: #dc143c;
+  margin-bottom: -3rem;
 }
 
 .assign-task {
@@ -112,6 +136,7 @@ h1 {
   height: 4rem;
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .single-to-do input {
