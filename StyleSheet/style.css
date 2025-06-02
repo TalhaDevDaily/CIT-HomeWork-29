@@ -20,6 +20,11 @@ body {
   font-family: "Roboto Mono", monospace;
   background-color: #212121;
   color: #fff;
+  letter-spacing: 1rem;
+}
+
+input {
+  font-family: "Roboto Mono", monospace;
 }
 
 button {
@@ -42,6 +47,7 @@ h1 {
   color: #ffd700;
   font-family: "Roboto", sans-serif;
   margin-bottom: 5rem;
+  letter-spacing: 0;
 }
 
 .header-primary--5 {
@@ -131,8 +137,7 @@ h1:hover .header-primary--5 {
 
 .single-to-do {
   width: 80rem;
-  border: 0.2rem solid #777;
-  border-radius: 1rem;
+  border-bottom: 0.2rem solid #777;
   height: 4rem;
   display: flex;
   justify-content: space-between;
@@ -143,7 +148,8 @@ h1:hover .header-primary--5 {
   width: 80%;
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #ffd700;
+  letter-spacing: 0.2rem;
   padding-left: 2rem;
   font-size: 2rem;
 }
@@ -165,4 +171,18 @@ ion-icon {
 
 .single-to-do button:nth-child(3) {
   background-color: #dc143c;
+}
+
+.single-to-do--break {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #dc143c;
+  z-index: 1000;
+}
+
+.single-to-do--break---2 {
+  margin-top: -5rem;
+  width: 80rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
 }
